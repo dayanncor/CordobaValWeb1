@@ -1,3 +1,8 @@
+@media (max-width: 768px) {
+  .search-box {
+    display: none !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -243,7 +248,7 @@ article:hover {
   color: #333;
 }
 #contacto {
-  grid-area: s4; 
+  grid-area: s2; 
   width: 100%;
   min-height: 200px;
   background: linear-gradient(to right, #f8c0f8, #e09de0);
@@ -298,26 +303,26 @@ article:hover {
   text-decoration: underline;
 }
 @media (max-width: 768px) {
+
   header {
-    position: static;
-    height: 100px;
+    position: sticky;
+    height: 80px;
     padding: 15px;
     text-align: center;
   }
-
-  .logo span {
-    margin-left: 0;
+  .logo {
+    display:none;
   }
-
   .frase {
-    margin: 10px 0;
-    font-size: 18px;
+    display:flex;
+    font-size: 16px;
+    justify-content: center;
   }
-
   .navbar {
-    height: 4rem;
+
+    height: 55px;
     position: fixed; 
-    top: 0;
+    top: 9%;
   }
 
   .navbar ul {
@@ -390,8 +395,8 @@ article:hover {
   .navbar ul {
     display: none;
     flex-direction: column;
-    background: #c465f0;
-    width: 100%;
+    background: #c465f075;
+    width: 30%;
     position: absolute;
     top: 100%; 
     left: 0;
